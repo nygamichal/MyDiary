@@ -6,4 +6,8 @@ package pl.nygamichal.mydiary;
 
 public class Note {
     public String content;
+
+    public Note(String content) {
+        this.content = content;
+    }
 }

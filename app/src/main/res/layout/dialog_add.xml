@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--//Podpowiedz przejdzie nad pole w którym się znajdowało, aby user wiedizal co gdzie ma wpisac-->
+    <EditText
+        android:id="@+id/inputNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Content"
+        android:imeOptions="actionDone"
+        android:inputType="textCapSentences|textMultiLine"
+
+        />
+    <!-- imeOptions = actionDone czyli jak nacisniemy enter to potwierzda to co wpisalismy -->
+    <!-- inputType="textCapSentences|textMultiLine" <- jezeli bedzie dluzsze niz jedna linikja to rpzejdzie nizej tak by bylo widac co bylo napisane - taki word wrap(zawijanie wierszy)-->
+
+</LinearLayout>

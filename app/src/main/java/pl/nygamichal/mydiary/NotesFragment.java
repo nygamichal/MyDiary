@@ -18,6 +18,11 @@ public class NotesFragment extends Fragment {
         // Required empty public constructor
     }
 
+    //w przysłości - będziemy chcieli przekazac dane z poprzedniego ekranu/logowania/itd
+    public static NotesFragment getInstance()
+    {
+        return new NotesFragment();
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
